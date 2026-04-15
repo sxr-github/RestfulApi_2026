@@ -18,6 +18,14 @@ class Apierror extends error {
         return new Apierror(404, message)
     }
 
+    static forbidden(message = "forbidde"){
+        return new Apierror(412, message)
+    }
+    
+     static notFound(message = "not found"){
+        return new Apierror(404, message)
+    }
+
 }
 
 
